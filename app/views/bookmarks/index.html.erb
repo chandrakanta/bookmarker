@@ -1,0 +1,33 @@
+<script type="text/javascript">
+var url = "http://192.168.1.127:3013/";	
+if (window.sidebar) { // Mozilla Firefox
+    window.sidebar.addPanel(name, url, "");
+}
+else if (window.external) { // IE
+    window.external.AddFavorite(url, name);
+}
+else if (window.opera && window.print) {
+    window.external.AddFavorite(url, name);
+}
+else {
+    alert('not supported');
+}
+</script>
+<h1>Listing bookmarks</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @bookmarks.each do |bookmark| %>
+  <tr>
+    <td><%= link_to 'Show', bookmark %></td>
+    <td><%= link_to 'Edit', edit_bookmark_path(bookmark) %></td>
+    <td><%= link_to 'Destroy', bookmark, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bookmark', new_bookmark_path %>

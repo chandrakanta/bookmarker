@@ -1,0 +1,356 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 192.168.1.127 at 2010-09-14 15:45:28) [GET]
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 78ms (View: 16, DB: 31) | 200 OK [http://192.168.1.127/rails/info/properties]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.127 at 2010-09-14 15:45:35) [GET]
+
+ActionController::RoutingError (No route matches "/bookmarkers" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.127 at 2010-09-14 15:47:51) [GET]
+
+ActionController::RoutingError (No route matches "/bookmarkers" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.127 at 2010-09-14 15:47:54) [GET]
+
+NameError (uninitialized constant BookmarkersController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (31.3ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.127 at 2010-09-14 15:48:01) [GET]
+
+NameError (uninitialized constant BookmarkersController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (31.3ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.127 at 2010-09-14 15:48:30) [GET]
+
+NameError (uninitialized constant BookmarkersController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 15:49:20) [GET]
+  [4;36;1mBookmark Load (0.0ms)[0m   [0;1mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+Completed in 328ms (View: 328, DB: 0) | 200 OK [http://192.168.1.127/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#new (for 192.168.1.127 at 2010-09-14 15:49:22) [GET]
+  [4;35;1mBookmark Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `bookmarks`[0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/new
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://192.168.1.127/bookmarks/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#create (for 192.168.1.127 at 2010-09-14 15:49:23) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dgkQBBsQejUOUYqu0AziuEm5Zj2kkuCqjZn2JbZyt10="}
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBookmark Create (15.6ms)[0m   [0;1mINSERT INTO `bookmarks` (`name`, `url`, `description`) VALUES(NULL, NULL, NULL)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.127:3013/bookmarks/1
+Completed in 31ms (DB: 16) | 302 Found [http://192.168.1.127/bookmarks]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#show (for 192.168.1.127 at 2010-09-14 15:49:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBookmark Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` WHERE (`bookmarks`.`id` = 1) [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/show
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://192.168.1.127/bookmarks/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#edit (for 192.168.1.127 at 2010-09-14 15:50:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` WHERE (`bookmarks`.`id` = 1) [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/edit
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://192.168.1.127/bookmarks/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#update (for 192.168.1.127 at 2010-09-14 15:50:09) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"dgkQBBsQejUOUYqu0AziuEm5Zj2kkuCqjZn2JbZyt10=", "id"=>"1"}
+  [4;36;1mBookmark Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` WHERE (`bookmarks`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.1.127:3013/bookmarks/1
+Completed in 16ms (DB: 16) | 302 Found [http://192.168.1.127/bookmarks/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#show (for 192.168.1.127 at 2010-09-14 15:50:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` WHERE (`bookmarks`.`id` = 1) [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://192.168.1.127/bookmarks/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#show (for 192.168.1.127 at 2010-09-14 15:51:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBookmark Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` WHERE (`bookmarks`.`id` = 1) [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/show
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://192.168.1.127/bookmarks/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 15:51:04) [GET]
+  [4;36;1mBookmark Load (0.0ms)[0m   [0;1mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;35;1mBookmark Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://192.168.1.127/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#new (for 192.168.1.127 at 2010-09-14 15:51:06) [GET]
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://192.168.1.127/bookmarks/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#create (for 192.168.1.127 at 2010-09-14 15:51:10) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dgkQBBsQejUOUYqu0AziuEm5Zj2kkuCqjZn2JbZyt10="}
+  [4;35;1mBookmark Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `bookmarks`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBookmark Create (0.0ms)[0m   [0mINSERT INTO `bookmarks` (`name`, `url`, `description`) VALUES(NULL, NULL, NULL)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://192.168.1.127:3013/bookmarks/2
+Completed in 16ms (DB: 0) | 302 Found [http://192.168.1.127/bookmarks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#show (for 192.168.1.127 at 2010-09-14 15:51:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mBookmark Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `bookmarks`[0m
+  [4;36;1mBookmark Load (0.0ms)[0m   [0;1mSELECT * FROM `bookmarks` WHERE (`bookmarks`.`id` = 2) [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://192.168.1.127/bookmarks/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 15:51:11) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://192.168.1.127/bookmarks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 15:51:14) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://192.168.1.127/bookmarks]
+  [4;35;1mSQL (328.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 16:01:15) [GET]
+  [4;35;1mBookmark Load (343.8ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (328.1ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 10859ms (View: 6375, DB: 1125) | 200 OK [http://192.168.1.127/bookmarks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 16:03:14) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 609ms (View: 438, DB: 16) | 200 OK [http://192.168.1.127/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 16:03:53) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 438ms (View: 234, DB: 0) | 200 OK [http://192.168.1.127/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 16:04:44) [GET]
+  [4;35;1mBookmark Load (15.6ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 203ms (View: 156, DB: 16) | 200 OK [http://192.168.1.127/]
+  [4;35;1mSQL (781.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 16:49:48) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 516ms (View: 297, DB: 781) | 200 OK [http://192.168.1.127/bookmarks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 16:49:50) [GET]
+  [4;35;1mBookmark Load (15.6ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 734ms (View: 531, DB: 16) | 200 OK [http://192.168.1.127/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 17:06:27) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://192.168.1.127/bookmarks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 17:06:27) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 63ms (View: 0, DB: 16) | 200 OK [http://192.168.1.127/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 17:06:34) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://192.168.1.127/bookmarks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 17:06:34) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://192.168.1.127/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 17:06:47) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 2938ms (View: 2906, DB: 0) | 200 OK [http://192.168.1.127/bookmarks]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 17:06:50) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://192.168.1.127/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 17:07:23) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://192.168.1.127/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookmarksController#index (for 192.168.1.127 at 2010-09-14 17:07:23) [GET]
+  [4;35;1mBookmark Load (0.0ms)[0m   [0mSELECT * FROM `bookmarks` [0m
+Rendering template within layouts/bookmarks
+Rendering bookmarks/index
+  [4;36;1mBookmark Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `bookmarks`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://192.168.1.127/]
